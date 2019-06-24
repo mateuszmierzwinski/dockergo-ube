@@ -5,5 +5,7 @@ RUN apk add git graphviz libc-dev gcc make font-bitstream-type1 ghostscript-font
 RUN go get github.com/golang/mock/gomock
 RUN go install github.com/golang/mock/mockgen
 RUN go get github.com/golang/dep/cmd/dep
+RUN go get google.golang.org/grpc
+RUN go get github.com/golang/protobuf/protoc-gen-go
 ENV CGO_ENABLE=0
 VOLUME /app
