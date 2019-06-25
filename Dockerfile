@@ -8,5 +8,6 @@ RUN go install github.com/golang/mock/mockgen
 RUN go get github.com/golang/dep/cmd/dep
 RUN go get google.golang.org/grpc
 RUN go get github.com/golang/protobuf/protoc-gen-go
+RUN go install github.com/golang/protobuf/protoc-gen-go
 ENV CGO_ENABLE=0
 VOLUME /app
