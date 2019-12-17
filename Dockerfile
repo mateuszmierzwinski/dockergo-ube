@@ -1,4 +1,4 @@
-FROM golang:1.12.1-alpine
+FROM golang:1.13.5-alpine
 MAINTAINER mateuszmierzwinski@gmail.com
 # installing go dependencies
 RUN apk add git graphviz libc-dev gcc make font-bitstream-type1 ghostscript-fonts protobuf protobuf-c openjdk8 maven
